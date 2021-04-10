@@ -1,5 +1,4 @@
 import dropbox
-import os
 
 class TransferData:
     def __init__ (self,Access_Token):
@@ -14,11 +13,11 @@ class TransferData:
             dbx.files_upload(f.read(), dropbox_path, mode=WriteMode('overwrite'))
 
 def main():
-    Access_Token='cl7Y4Cz7LBkAAAAAAAAAAVYEnBJAn2NmIDC_2SxDdPWi79YXg8qh393cw-Oo4vGg'       
-    transferData = TransferData(self.Access_Token)
+    Access_Token :'cl7Y4Cz7LBkAAAAAAAAAAVYEnBJAn2NmIDC_2SxDdPWi79YXg8qh393cw-Oo4vGg'       
+    transferData : TransferData(self.Access_Token)
 
-    file_from = input("Enter your file path to upload it on dropbox:    ")
-    file_to = input("Enter full path to save it in dropbox:    ")
+    file_from : input("Enter your file path to upload it on dropbox:    ")
+    file_to : input("Enter full path to save it in dropbox:    ")
 
     transferData.upload_file(file_from, file_to)
 main()
